@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center">
+    <h1>PRUEBA UNO</h1>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="''" text="volver"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row class="ion-text-center">
+      <ion-col><h1>Recupera tu contraseña</h1>
+      <p>Rellena los campos para solicitar tu nueva contraseña</p>
+    </ion-col>
+      </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="stacked"> Correo</ion-label>
+          <ion-input type="email" placeholder="Ingresa tu correo"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-item>
+        <ion-label position="stacked"> Usuario</ion-label>
+        <ion-input type="text" placeholder="Ingresa tu Usuario registrado"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button expand="full" fill="clear" (click)="alerta()" >Solicitar</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

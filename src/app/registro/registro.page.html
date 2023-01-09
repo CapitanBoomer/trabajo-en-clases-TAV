@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center">
+    <p>PRUEBA UNO</p>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="''" text="volver"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <h1>Nueva Cuenta</h1>
+        <p>Completa los componentes</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+
+        <ion-list>
+          <ion-item>
+            <ion-label position="stacked">Usuario</ion-label>
+            <ion-input placeholder="Ingesa aqui" type="text"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Correo</ion-label>
+            <ion-input placeholder="Ingesa aqui" type="email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">
+              Selecciona carrera
+            </ion-label>
+            <ion-select interface="popover" placeholder="Carreras">
+              <ion-select-option value="apples">Cocina</ion-select-option>
+              <ion-select-option value="oranges">Informatica</ion-select-option>
+              <ion-select-option value="bananas">Redes</ion-select-option>
+              <ion-select-option value="bananas">Adimnistracion</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Contraseña</ion-label>
+            <ion-input placeholder="Ingesa aqui" type="password"></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="full" color="success" (click)="alerta()">Registrar</ion-button>
+      </ion-col>
+      <ion-col> <ion-button expand="full">Limpiar</ion-button></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

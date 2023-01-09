@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <h1>Prueba Uno</h1>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-list-header>Catalogo</ion-list-header>
+  <ion-item *ngFor="let g of bolsa" [routerLink]="['/detalle','tituloo']" [queryParams]="{id:g.id,precio:g.price,info:g.description}" [state]="{images:g.images}">
+<ion-avatar slot="start"><img [src]="g.images[0]" alt=""></ion-avatar>
+ <ion-label >{{g.title}} <p>precio: {{g.price}}</p></ion-label>
+</ion-item>
+</ion-list>
+</ion-content>
